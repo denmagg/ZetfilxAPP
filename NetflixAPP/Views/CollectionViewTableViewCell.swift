@@ -24,10 +24,19 @@ class CollectionViewTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .systemPink
         contentView.addSubview(collectionView)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        collectionView.frame = contentView.bounds
     }
     
 }
