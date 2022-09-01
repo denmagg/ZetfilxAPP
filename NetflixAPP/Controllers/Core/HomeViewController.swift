@@ -24,7 +24,6 @@ class HomeViewController: UIViewController {
     let sectionTitles: [String] = ["Trending Movies", "Trending Tv", "Popular", "Upcoming Movies", "Top rated"]
     
     private let homeFeedTable: UITableView = {
-        
         let table = UITableView(frame: .zero, style: .grouped)//grouped - стиль CollectionView, который apple использует в своих приложениях
         table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table

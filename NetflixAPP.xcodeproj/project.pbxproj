@@ -116,7 +116,6 @@
 			children = (
 				59500ED028BA313200B133F8 /* AppDelegate.swift */,
 				59500ED228BA313200B133F8 /* SceneDelegate.swift */,
-				59500ED428BA313200B133F8 /* MainTabBarViewController.swift */,
 				59500EF128BA3EC300B133F8 /* Managers */,
 				59500EF028BA3EB900B133F8 /* Resources */,
 				59500EEF28BA3EB200B133F8 /* Models */,
@@ -134,6 +133,7 @@
 		59500EE428BA333A00B133F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				59500ED428BA313200B133F8 /* MainTabBarViewController.swift */,
 				59A44EB228C0D04B00593301 /* General */,
 				59A44EB128C0D02F00593301 /* Core */,
 			);
