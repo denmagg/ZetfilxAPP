@@ -9,11 +9,11 @@ ___
 - Swift;
 - UIKit;
 - Cocoapods;
-- CoreData with PersistanceManager
-- YoutubeAPI + TMDB API
+- CoreData with PersistanceManager;
+- [**TMDB API**](https://www.themoviedb.org/?language=ru) для поиска фильмов и описания;
+- [**YouTube API**](https://developers.google.com/youtube/v3) для поиска трейлеров к фильмам;
 - WebKit;
-- [**Snapkit**](https://github.com/SnapKit/SnapKit) для AutoLayout;
-- [**SDWebImage**](https://github.com/kean/Nuke#documentation) для загрузки изображений.
+- [**SDWebImage**](https://github.com/SDWebImage/SDWebImage) для загрузки изображений.
 ___
 ### Скриншоты
 ![ZetflixScreens](https://user-images.githubusercontent.com/48126703/188013932-bca80b23-3e66-431b-9c7d-65a3afc1bb49.png)
