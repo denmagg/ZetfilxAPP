@@ -142,4 +142,6 @@ extension SearchViewController: UISearchResultsUpdating, SearchResultsViewContro
             self?.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    func
 }
