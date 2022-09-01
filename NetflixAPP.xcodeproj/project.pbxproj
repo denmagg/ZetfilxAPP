@@ -26,6 +26,9 @@
 		59A44EA928C0B44D00593301 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EA828C0B44D00593301 /* TitleTableViewCell.swift */; };
 		59A44EAB28C0B7A600593301 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EAA28C0B7A600593301 /* TitleViewModel.swift */; };
 		59A44EB028C0D02400593301 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EAF28C0D02400593301 /* SearchResultsViewController.swift */; };
+		59A44EB428C0E08100593301 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EB328C0E08100593301 /* YoutubeSearchResponse.swift */; };
+		59A44EB628C0E83900593301 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EB528C0E83900593301 /* TitlePreviewViewController.swift */; };
+		59A44EB828C0ED9D00593301 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EB728C0ED9D00593301 /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		59A44EA828C0B44D00593301 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		59A44EAA28C0B7A600593301 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		59A44EAF28C0D02400593301 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		59A44EB328C0E08100593301 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		59A44EB528C0E83900593301 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		59A44EB728C0ED9D00593301 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 		761E5082400963CC3599BC3F /* Pods_NetflixAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD27EE6A9102E8601F16A239 /* Pods-NetflixAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixAPP.release.xcconfig"; path = "Target Support Files/Pods-NetflixAPP/Pods-NetflixAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				59A44EAA28C0B7A600593301 /* TitleViewModel.swift */,
+				59A44EB728C0ED9D00593301 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				592A3DA528C08152006C5BDE /* Title.swift */,
+				59A44EB328C0E08100593301 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				59A44EAF28C0D02400593301 /* SearchResultsViewController.swift */,
+				59A44EB528C0E83900593301 /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -316,8 +325,11 @@
 				59500ED328BA313200B133F8 /* SceneDelegate.swift in Sources */,
 				59A44EB028C0D02400593301 /* SearchResultsViewController.swift in Sources */,
 				592A3DA828C08B0B006C5BDE /* Extensions.swift in Sources */,
+				59A44EB428C0E08100593301 /* YoutubeSearchResponse.swift in Sources */,
 				59500EEC28BA33F800B133F8 /* DonwloadsViewController.swift in Sources */,
+				59A44EB828C0ED9D00593301 /* TitlePreviewViewModel.swift in Sources */,
 				59500EE828BA33A800B133F8 /* UpcomingViewController.swift in Sources */,
+				59A44EB628C0E83900593301 /* TitlePreviewViewController.swift in Sources */,
 				592A3DA628C08152006C5BDE /* Title.swift in Sources */,
 				59500EE628BA337300B133F8 /* HomeViewController.swift in Sources */,
 				59A44EAB28C0B7A600593301 /* TitleViewModel.swift in Sources */,
