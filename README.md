@@ -37,4 +37,4 @@ ___
 ___
 #### Contact me:
 &nbsp;[![image-text](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/#search/denmagg.work@gmail.com)&nbsp;[![image-text](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/denis99m)
-![image](https://user-images.githubusercontent.com/48126703/188015642-9c5fc183-5246-4a4f-9513-bfbf8bb80888.png)
+![image](https://user-images.githubusercontent.com/48126703/188016563-9b3293fa-ec30-4df4-a8ee-e72834d73fc9.png)
