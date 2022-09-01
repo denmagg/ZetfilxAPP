@@ -44,7 +44,7 @@ class HeroHeaderUIView: UIView {
         addGradient()
         addSubview(downloadButton)
         addSubview(playButton)
-        applyConstraints()
+        setupConstraints()
     }
     
     override func layoutSubviews() {
@@ -67,7 +67,7 @@ class HeroHeaderUIView: UIView {
         layer.addSublayer(gradientLayer)
     }
     
-    private func applyConstraints() {
+    private func setupConstraints() {
         
         let playButtonConstraints = [
             playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),

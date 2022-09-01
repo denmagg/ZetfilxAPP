@@ -23,6 +23,8 @@
 		59500EEA28BA33C400B133F8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59500EE928BA33C400B133F8 /* SearchViewController.swift */; };
 		59500EEC28BA33F800B133F8 /* DonwloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59500EEB28BA33F800B133F8 /* DonwloadsViewController.swift */; };
 		59500EF328BA3F4000B133F8 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59500EF228BA3F4000B133F8 /* CollectionViewTableViewCell.swift */; };
+		59A44EA928C0B44D00593301 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EA828C0B44D00593301 /* TitleTableViewCell.swift */; };
+		59A44EAB28C0B7A600593301 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A44EAA28C0B7A600593301 /* TitleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		59500EE928BA33C400B133F8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		59500EEB28BA33F800B133F8 /* DonwloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonwloadsViewController.swift; sourceTree = "<group>"; };
 		59500EF228BA3F4000B133F8 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		59A44EA828C0B44D00593301 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		59A44EAA28C0B7A600593301 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		761E5082400963CC3599BC3F /* Pods_NetflixAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetflixAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD27EE6A9102E8601F16A239 /* Pods-NetflixAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetflixAPP.release.xcconfig"; path = "Target Support Files/Pods-NetflixAPP/Pods-NetflixAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +70,6 @@
 				3DDA27BE46C68A3F624D8E69 /* Pods-NetflixAPP.debug.xcconfig */,
 				BD27EE6A9102E8601F16A239 /* Pods-NetflixAPP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,6 +135,7 @@
 				59500EF228BA3F4000B133F8 /* CollectionViewTableViewCell.swift */,
 				592A3DA128BFFE7E006C5BDE /* HeroHeaderUIView.swift */,
 				592A3DAB28C09E8B006C5BDE /* TitleCollectionViewCell.swift */,
+				59A44EA828C0B44D00593301 /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +143,7 @@
 		59500EEE28BA3EA000B133F8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				59A44EAA28C0B7A600593301 /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A44EA928C0B44D00593301 /* TitleTableViewCell.swift in Sources */,
 				59500EEA28BA33C400B133F8 /* SearchViewController.swift in Sources */,
 				592A3DAC28C09E8B006C5BDE /* TitleCollectionViewCell.swift in Sources */,
 				59500ED528BA313200B133F8 /* MainTabBarViewController.swift in Sources */,
@@ -294,6 +300,7 @@
 				59500EE828BA33A800B133F8 /* UpcomingViewController.swift in Sources */,
 				592A3DA628C08152006C5BDE /* Title.swift in Sources */,
 				59500EE628BA337300B133F8 /* HomeViewController.swift in Sources */,
+				59A44EAB28C0B7A600593301 /* TitleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
