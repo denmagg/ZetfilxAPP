@@ -36,7 +36,7 @@ class SearchViewController: UIViewController {
         discoverTable.delegate = self
         discoverTable.dataSource = self
         navigationItem.searchController = searchController
-//        navigationController?.navigationItem.titleView?.tintColor = .systemBackground
+        navigationController?.navigationItem.titleView?.tintColor = .systemBackground
         searchController.searchResultsUpdater = self
         
         fetchDiscoverMovies()
@@ -101,8 +101,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
-                
-                
             case .failure(let error):
                 print(error.localizedDescription)
             }

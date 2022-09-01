@@ -59,9 +59,6 @@ class HomeViewController: UIViewController {
                 print(erorr.localizedDescription)
             }
         }
-        
-
-
     }
     
     private func configureNavbar() {
@@ -115,9 +112,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-            
-            
-            
         case Sections.TrendingTv.rawValue:
             APICaller.shared.getTrendingTvs { result in
                 switch result {
@@ -137,7 +131,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 }
             }
         case Sections.Upcoming.rawValue:
-            
             APICaller.shared.getUpcomingMovies { result in
                 switch result {
                 case .success(let titles):
@@ -146,7 +139,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                     print(error.localizedDescription)
                 }
             }
-            
         case Sections.TopRated.rawValue:
             APICaller.shared.getTopRated { result in
                 switch result {
@@ -158,7 +150,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             }
         default:
             return UITableViewCell()
-
         }
         
         return cell

@@ -61,8 +61,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.identifier, for: indexPath) as? TitleTableViewCell else { return UITableViewCell() }
-//        let title = titles[indexPath.row]
-//        cell.configure(with: TitleViewModel(titleName: (title.original_title ?? title.original_name) ?? "Unknown title name", posterURL: title.poster_path ?? ""))
         let title = titles[indexPath.row]
         cell.configure(with: TitleViewModel(titleName: (title.original_title ?? title.original_name) ?? "Unknown title name", posterURL: title.poster_path ?? ""))
         return cell
@@ -82,7 +80,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
             switch result {
             case .success(let videoElement):
@@ -91,13 +88,10 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
-
-                
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
     }
-    
     
 }

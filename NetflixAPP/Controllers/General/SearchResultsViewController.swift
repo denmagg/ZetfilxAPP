@@ -14,11 +14,9 @@ protocol SearchResultsViewControllerDelegate: AnyObject {
 class SearchResultsViewController: UIViewController {
     
     public var titles: [Title] = [Title]()
-    
     public weak var delegate: SearchResultsViewControllerDelegate?
     
     public let searchResultsCollectionView: UICollectionView = {
-       
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 10, height: 200)
         layout.minimumInteritemSpacing = 0
@@ -47,6 +45,7 @@ class SearchResultsViewController: UIViewController {
 }
 
 extension SearchResultsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return titles.count
     }
@@ -69,15 +68,9 @@ extension SearchResultsViewController: UICollectionViewDelegate, UICollectionVie
             switch result {
             case .success(let videoElement):
                 self?.delegate?.searchResultsViewControllerDidTapItem(TitlePreviewViewModel(title: title.original_title ?? "", youtubeView: videoElement, titleOverview: title.overview ?? ""))
-
-                
             case .failure(let error):
                 print(error.localizedDescription)
             }
         }
-        
-
     }
-    
-    
 }

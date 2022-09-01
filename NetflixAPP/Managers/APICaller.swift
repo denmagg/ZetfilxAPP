@@ -25,9 +25,7 @@ class APICaller {
         guard let url = URL(string: "\(Constants.baseURL)/3/trending/movie/day?api_key=\(Constants.API_KEY)") else {return}
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
-            guard let data = data, error == nil else {
-                return
-            }
+            guard let data = data, error == nil else { return }
 
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
@@ -106,7 +104,6 @@ class APICaller {
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
                 completion(.success(results.results))
-
             } catch {
                 completion(.failure(APIError.failedTogetData))
             }
@@ -125,7 +122,6 @@ class APICaller {
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
                 completion(.success(results.results))
-
             } catch {
                 completion(.failure(APIError.failedTogetData))
             }
@@ -149,7 +145,6 @@ class APICaller {
             do {
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
                 completion(.success(results.results))
-
             } catch {
                 completion(.failure(APIError.failedTogetData))
             }
@@ -170,18 +165,13 @@ class APICaller {
             
             do {
                 let results = try JSONDecoder().decode(YoutubeSearchResponse.self, from: data)
-                
                 completion(.success(results.items[0]))
-                
-
             } catch {
                 completion(.failure(error))
                 print(error.localizedDescription)
             }
-
         }
         task.resume()
     }
-    
     
 }
